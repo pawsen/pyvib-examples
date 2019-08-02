@@ -313,11 +313,12 @@ figs = plot(res1, data1, p=1)
 
 
 ## Duffing like
+F = np.array([])
 nlx = [Pnl(degree=[3], structure='statesonly')]
 nly = None
 true_model = NLSS(A, B, C, D, E, F)
 true_model.add_nl(nlx=nlx, nly=nly)
-true_model.E = Efull[:,:true_model.nlx.n_nl]
+true_model.E = 0.1*Efull[:,:true_model.nlx.n_nl]
 data2 = simulate(true_model)
 res2 = identify(data2, nlx, nly, nmax=nmax, info=info)
 figs = plot(res2, data2, p=1)
