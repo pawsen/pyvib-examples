@@ -9,8 +9,7 @@ from pyvib.forcing import multisine
 from pyvib.newmark import Newmark
 from pyvib.nonlinear_elements_newmark import NLS, Polynomial
 
-"""
-Parameters for 2DOF duffing system
+""" Parameters for 2DOF duffing system
 
     #              x1                          x2                        #
     #            +-->                        +-->                        #
@@ -20,7 +19,7 @@ Parameters for 2DOF duffing system
     #  k1        |              |  k3        |              |  k4        #
     #__/\  /\  __|      M1      |__/\  /\  __|       M2     |__/\  /\  __#
     #    \/  \/  |              |    \/  \/  |              |    \/  \/  #
-    #  k2 ^      |              |            |              | k2 ^       #
+    #  k2 ^      |              |            |              | k2  ^      #
     #__/\/ /\  __|              |            |              |__/\/ /\  __#
     #   /\/  \/  +--------------+            +--------------+   /\/  \/  #
 
