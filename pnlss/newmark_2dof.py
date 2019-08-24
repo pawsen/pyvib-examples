@@ -71,7 +71,7 @@ x, xd, xdd = sys.integrate(fext, dt, x0=0, v0=0, sensitivity=False)
 
 
 plt.figure()
-plt.plot(t, x, '-k', label=r'$x_1$')
+plt.plot(t, x, label=r'$x_1$')
 #plt.plot(t, x, '-r', label=r'$x_2$')
 plt.xlabel('Time (t)')
 plt.ylabel('Displacement (m)')
